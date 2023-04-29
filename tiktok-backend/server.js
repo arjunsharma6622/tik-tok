@@ -22,11 +22,13 @@ app.use((req, res, next) => {
 //DB Config
 const connection_url = "mongodb+srv://arjunsharma6622:9700812822@cluster0.j6yz6.mongodb.net/?retryWrites=true&w=majority"
 
+
+
 //DataBase connection
 mongoose.connect(connection_url, {
-    useNewUrlParser : true,
+    // useNewUrlParser : true,
     // useCreateIndex : true,
-    useUnifiedTopology : true
+    // useUnifiedTopology : true
 })
 .then(() => console.log("Db connected"))
 .catch((err) => console.log(`Error : ${err}`))
